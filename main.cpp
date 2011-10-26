@@ -21,7 +21,7 @@
  moveCursorToEnd()      O(1)    O(N)    O(N)
  insertCharacter()      O(N)    O(1)    O(1)
  deleteCharacter()      O(N)    O(1)    O(1)
- moveCursorToWordBegin  O(1)    O(1)    O(N)
+ moveCursorToWordBegin  O(N)    O(N)    O(N)
  Space used             1N      2N      5N 
  
  Stack is easiest to implement and debug.
