@@ -1,0 +1,19 @@
+This program implements a simple low level editor buffer abstraction.
+   There are 3 implementations that the buffer is layered on top of"
+    Vector, Singly Linked List and Stack.
+ 
+ Big-O Implementation Comparisons
+ 
+                        Vector  Stack   List
+ Buffer()               O(1)    O(1)    O(1)
+ ~Buffer()              O(1)    O(1)    O(N)
+ moveCursorForward()    O(1)    O(1)    O(1)
+ moveCursorBackward()   O(1)    O(1)    O(N)
+ moveCursorToStart()    O(1)    O(N)    O(1)
+ moveCursorToEnd()      O(1)    O(N)    O(N)
+ insertCharacter()      O(N)    O(1)    O(1)
+ deleteCharacter()      O(N)    O(1)    O(1)
+ moveCursorToWordBegin  O(1)    O(1)    O(N)
+ Space used             1N      2N      5N 
+ 
+ Stack is easiest to implement and debug.
